@@ -26,9 +26,14 @@ stages {
          }
 
      }
-      stage('Execute Unit Tests'){
+      stage ('Execute Unit Tests') {
         steps {
                 sh './vendor/bin/phpunit'
+        }
+      }
+      stage ('Code Analysis') {
+        steps {
+                sh 'phploc app/ --log-csv build/logs/phploc.csv'
         }
       }
     }
