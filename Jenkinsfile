@@ -66,7 +66,7 @@ stages {
                     "files": [
                       {
                        "pattern": "php-todo.zip",
-                       "target": "PBL",
+                       "target": "PBL/php-todo",
                        "props": "type=zip;status=ready"
 
                        }
